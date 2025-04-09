@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hlabana Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="logo.png" alt="Hlabana Consulting Logo" class="logo">
+            <h1>Hlabana Consulting</h1>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>Contact Us</h1>
+            <p>Get in Touch for Professional Pest Control Solutions</p>
+        </div>
+    </header>
+
+    <!-- Main Contact Content -->
+    <main class="contact-page">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Have a pest problem? We're here to help! Fill out the form below and we'll get back to you as soon as possible.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+27 (0) 123 456 789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@hlabanaconsulting.co.za</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Johannesburg, South Africa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service">
+                            <option value="">Select a Service</option>
+                            <option value="cockroach">Cockroach Control</option>
+                            <option value="rodent">Rodent Control</option>
+                            <option value="ant">Ant Control</option>
+                            <option value="termite">Termite Treatment</option>
+                            <option value="bedbug">Bed Bug Treatment</option>
+                            <option value="other">Other Services</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <!-- Footer content same as index.html -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +27 (0) 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@hlabanaconsulting.co.za</p>
+                <p><i class="fas fa-location-dot"></i> Johannesburg, South Africa</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://wa.me/+27781187534" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://facebook.com/hlabanaconsulting" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:hlabanaconsulting@gmail.com"><i class="fab fa-google"></i></a>
+                    <a href="https://wa.me/+27813946618" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Emergency Services Only</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hlabana Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
