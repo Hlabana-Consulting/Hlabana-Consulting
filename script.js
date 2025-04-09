@@ -69,3 +69,14 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('navbar-scrolled');
     }
 });
+
+// Quick form validation
+const quickValidate = (input, minLength) => {
+    return input.value.trim().length >= minLength;
+};
+
+// Easy error handling
+const handleError = (element, message) => {
+    element.classList.add('error');
+    element.setAttribute('data-error', message);
+};
